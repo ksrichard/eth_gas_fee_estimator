@@ -254,4 +254,9 @@ Example response:
 }
 ```
 
+## Future improvements
+
+- [ ] Collect gas price from an ethereum node instead of through API to avoid extra costs (after using all free limits daily) 
+- [ ] Save latest gas price (base fee) locally to load and use that initially in the application (will be updated of course, just to have something already in place)
+
 
