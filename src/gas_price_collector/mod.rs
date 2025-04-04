@@ -13,6 +13,6 @@ pub trait Collector {
     /// Starts the collector.
     async fn start(&self, cancel_token: CancellationToken) -> Result<(), Self::Error>;
 
-    // Returns actual gas price in WEI.
+    /// Returns actual gas price in WEI.
     async fn gas_price(&self) -> U256;
 }
