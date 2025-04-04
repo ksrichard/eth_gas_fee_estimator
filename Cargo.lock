@@ -1671,6 +1671,34 @@ dependencies = [
 ]
 
 [[package]]
+name = "eth_gas_fee_estimator"
+version = "0.1.0"
+dependencies = [
+ "alloy",
+ "anyhow",
+ "async-trait",
+ "axum",
+ "clap",
+ "ctrlc",
+ "ethereum",
+ "evm-disassembler",
+ "evm-gasometer",
+ "evm-runtime",
+ "eyre",
+ "hex",
+ "lazy_static",
+ "log",
+ "primitive-types",
+ "serde",
+ "simple_logger",
+ "thiserror 2.0.12",
+ "tokio",
+ "tokio-util",
+ "tower-http",
+ "url",
+]
+
+[[package]]
 name = "ethbloom"
 version = "0.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1962,34 +1990,6 @@ name = "futures-utils-wasm"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "42012b0f064e01aa58b545fe3727f90f7dd4020f4a3ea735b50344965f5a57e9"
-
-[[package]]
-name = "gas_fee_estimator"
-version = "0.1.0"
-dependencies = [
- "alloy",
- "anyhow",
- "async-trait",
- "axum",
- "clap",
- "ctrlc",
- "ethereum",
- "evm-disassembler",
- "evm-gasometer",
- "evm-runtime",
- "eyre",
- "hex",
- "lazy_static",
- "log",
- "primitive-types",
- "serde",
- "simple_logger",
- "thiserror 2.0.12",
- "tokio",
- "tokio-util",
- "tower-http",
- "url",
-]
 
 [[package]]
 name = "generic-array"

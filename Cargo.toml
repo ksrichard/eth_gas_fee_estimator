@@ -1,5 +1,5 @@
 [package]
-name = "gas_fee_estimator"
+name = "eth_gas_fee_estimator"
 version = "0.1.0"
 edition = "2021"
 

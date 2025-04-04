@@ -9,7 +9,8 @@ use tower_http::timeout::TimeoutLayer;
 
 use crate::{
     fee_estimator::Estimator,
-    gas_price_collector::{self, in_memory::InMemoryCollector, Collector}, Cli,
+    gas_price_collector::{self, in_memory::InMemoryCollector, Collector},
+    Cli,
 };
 
 use super::handlers;
@@ -42,7 +43,8 @@ impl HttpServer {
 
     /// Starts the HTTP server and all of its needed services.
     pub async fn start(&mut self, cli: &Cli) -> Result<(), Error> {
-        let gas_price_collector = Arc::new(InMemoryCollector::new(cli.eth_json_rpc_client_url.clone()));
+        let gas_price_collector =
+            Arc::new(InMemoryCollector::new(cli.eth_json_rpc_client_url.clone()));
 
         // start collector
         let collector = gas_price_collector.clone();

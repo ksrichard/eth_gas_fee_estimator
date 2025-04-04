@@ -11,7 +11,7 @@ mod http;
 #[command(version, about)]
 pub struct Cli {
     /// HTTP port where API is exposed
-    #[arg(short = 'p', long, default_value_t=9999)]
+    #[arg(short = 'p', long, default_value_t = 9999)]
     port: u16,
 
     /// Ethereum client JSON-RPC URL.

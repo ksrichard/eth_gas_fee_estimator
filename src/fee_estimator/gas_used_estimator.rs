@@ -20,6 +20,7 @@ pub enum Error {
     HexDecode(#[from] FromHexError),
 }
 
+/// Estimates the gas used for any given transaction.
 pub struct GasUsedEstimator {
     config: Config,
     gas_limit: u64,
